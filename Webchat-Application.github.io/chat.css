@@ -1,0 +1,100 @@
+.chat-area header
+{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+
+/*to style the lefr arrow*/
+.chat-area header .back-icon
+{
+    font-size: 18px;
+    color: #333;
+}
+
+/*to style the profile photo of the user*/
+.chat-area header img
+{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+/*to style the username*/
+.chat-area header span
+{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/*to style the chat area*/
+.chat-box
+{
+    overflow-y: auto;
+    height: 500px;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+              inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+
+.chat-box .chat
+{
+    margin: 15px 0;
+}
+
+.chat-box .chat p
+{
+    word-wrap: break-word;  /*used to break the line where the text are to long*/
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+.chat-box .outgoing
+{
+    display: flex;
+}
+
+/*to adjust the outgoing chat box to the right side*/
+.outgoing .details
+{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+
+/*to style the chat outgoing message*/
+.outgoing .details p
+{
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px; /*to add the curve to the meaage box*/
+}
+
+.chat-box .incoming
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*to style the image*/
+.chat-box .incoming img
+{
+    height: 35px;
+    width: 35px;
+}
+
+.incoming .details
+{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+
+.incoming .details p
+{
+    color: #333;
+    background: #fff;
+    border-radius: 18px 18px 18px 0;
+
+}
